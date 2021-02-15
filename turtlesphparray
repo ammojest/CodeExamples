@@ -8,10 +8,14 @@ $turtles = array(
     );
 
 
+
    foreach ( $turtles as $turtle => $atts ) {
-       echo "<p><b>$turtle: </b>";
+       $turtle = ucwords($turtle);//uppercase turtle name 
+       echo "<p><b>$turtle</b>"; //turtle name
        echo '<ul>';
        foreach( $atts as $label => $attr ) {
+        $label = ucwords($label);
+        $attr = ucwords($attr);
        echo "<li>$label : $attr</li>"; 
        } 
        echo '</ul>';
