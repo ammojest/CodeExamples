@@ -1,0 +1,19 @@
+<?php 
+
+$turtles = array(
+    'leo' => array ( 'colour' => 'blue', 'weapon' => 'swords', 'role' => 'leader'),
+    'mikey' => array ( 'colour' => 'orange', 'weapon' => 'nunchucks', 'role' => 'cool one'),
+    'ralph' => array ( 'colour' => 'red', 'weapon' => 'sai', 'role' => 'hot shot'),
+    'donnie' => array ( 'colour' => 'purple', 'weapon' => 'staff', 'role' => 'nerd'),
+    );
+
+
+   foreach ( $turtles as $turtle => $atts ) {
+       echo "<p><b>$turtle: </b>";
+       echo '<ul>';
+       foreach( $atts as $label => $attr ) {
+       echo "<li>$label : $attr</li>"; 
+       } 
+       echo '</ul>';
+   }
+    
