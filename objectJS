@@ -1,0 +1,20 @@
+const Person = {
+    firstName: 'Phil',
+    lastName: 'Jones',
+    profession: 'Footballer',
+    position:'Right-Back',
+    team: "Man Utd",
+};
+
+
+const Content = `
+<h1>Player: ${Person.firstName} ${Person.lastName}</h1>
+<ul>
+<li>Team: ${Person.team}</li>
+<li>Position: ${Person.position}</li>
+</ul>
+`;
+
+
+const main =  document.querySelector("main");
+main.innerHTML = Content;
