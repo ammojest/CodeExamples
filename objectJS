@@ -1,21 +1,25 @@
 // https://www.w3schools.com/js/js_objects.asp
 
 
-const Person = {
-    firstName: 'Phil',
-    lastName: 'Jones',
-    profession: 'Footballer',
-    position:'Right-Back',
-    team: "Man Utd",
-};
+class Footballer { constructor ( name, surName, position, team) {
+    this.name = name;
+    this.surName = surName;
+    this.position = position;
+    this.team = team;
+}};
 
+let person = new Footballer('John', 'Wark', 'defender', 'Ipswich');
 
 const Content = `
-<h1>Player: ${Person.firstName} ${Person.lastName}</h1>
-<ul>
-<li>Team: ${Person.team}</li>
-<li>Position: ${Person.position}</li>
-</ul>
+<div class="container-fluid">
+    <div class="row">
+        <h1>Player: ${person.name} ${person.surName}</h1>
+        <ul>
+            <li>Team: ${person.team}</li>
+            <li>Position: ${person.position}</li>
+        </ul>
+    </div>
+</div>
 `;
 
 
