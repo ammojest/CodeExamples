@@ -1,2 +1,2 @@
-# Codeexamples
+# CodeExamples
 Example of my code
